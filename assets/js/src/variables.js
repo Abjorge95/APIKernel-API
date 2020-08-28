@@ -1,7 +1,12 @@
-var rBirthdate;
-var rUsername;
-var rEmail;
-var rPassword;
-var rConfirmpassword;
+/*
+	[USER TEMP VARIABLES]
+*/
 
-var rCurrentmenu = 0;
+var tBirthDate;
+var sUsername;
+var sEmail;
+var sPassword;
+var sConfirmPassword;
+var bReceiveNewsLetter;
+
+var iCurrentMenu = 0;

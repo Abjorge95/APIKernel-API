@@ -15,14 +15,27 @@ function consoleLog(message, type){
     }
 }
 
+
 function alertDefault(heading, text){
     $.toast({
         heading: heading,
         text: text,
         showHideTransition: 'fade',
         icon: 'warning',
+        bgColor: 'rgba(55,55,55,0.8)',
+        position: 'top-left',
+        hideAfter: 5000
+    })
+}
+
+function alertError(heading, text){
+    $.toast({
+        heading: heading,
+        text: text,
+        showHideTransition: 'fade',
+        icon: 'warning',
         bgColor: 'rgb(220,41,30,0.8)',
-        position: 'bottom-right',
+        position: 'top-left',
         hideAfter: 5000
     })
 }
