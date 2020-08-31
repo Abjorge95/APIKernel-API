@@ -1,0 +1,123 @@
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#sidebar-wrapper {
+  z-index: 98;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  /*bottom: 0;*/
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 0px;
+  line-height: 40px;
+  /*padding-left: 10px;*/
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  /*color: rgba(0,0,0,0.5);*/
+  padding-left: 10px;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: rgba(83,119,174,0.9);
+  background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+@media (min-width:768px) {
+  #wrapper {
+    padding-left: 250px;
+  }
+}
+
+@media (min-width:768px) {
+  #sidebar-wrapper {
+    width: 250px;
+  }
+}
+
+.sidebar--item {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  /*color: #162a4c;*/
+  border-bottom: 1px solid #dfe3ec;
+  color: rgba(83,119,174,0.9);
+  cursor: pointer;
+}
+
+.sidebar--sub-menu {
+  list-style-type: none;
+  font-size: 14px;
+  /*font-family: Montserrat, sans-serif;*/
+  font-weight: 400;
+  color: #162a4c;
+  transition: 500ms all;
+  font-family: Nunito, sans-serif;
+  /*padding-left: 0px;*/
+}
+
+.sidebar--sub-menu:hover {
+  cursor: pointer;
+  color: rgba(83,119,174,0.9);
+}
+
+.sidebar--menu {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /*font-family: Montserrat, sans-serif;*/
+  font-weight: 400;
+  color: rgba(83,119,174,0.9);
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+}
+
+#menu {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+}
+
