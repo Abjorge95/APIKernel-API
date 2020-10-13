@@ -171,3 +171,13 @@ function rtpasswordvalidation() {
 	}
 	
 }
+
+window.onscroll = function() {if(path.includes('docs')){scrollFunction()}};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    document.getElementById("sidebar-wrapper").style.margin = "-55px 0px 0px -250px";
+  } else {
+    document.getElementById("sidebar-wrapper").style.margin = "0px 0px 0px -250px";
+  }
+}
