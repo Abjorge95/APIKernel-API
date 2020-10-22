@@ -181,3 +181,11 @@ function scrollFunction() {
     document.getElementById("sidebar-wrapper").style.margin = "0px 0px 0px -250px";
   }
 }
+
+/*
+	Server Alias render change
+*/
+
+function serverAliasRender(){
+	document.body.innerHTML = document.body.innerHTML.replace(/ServerAlias/g, sServerAlias);
+}

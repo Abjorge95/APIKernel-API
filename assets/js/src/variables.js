@@ -1,4 +1,21 @@
 /*
+	Server Settings
+	TO BE CHANGED BY SERVER OWNER
+
+	sServerAlias - Server name, used in platform render
+	aRealms - Array of realms, used for multiple realms API
+		Index 1 - Realm ID
+		Index 2 - Realm name
+*/
+
+var sServerAlias = "APIKernel";
+
+var aRealms = [
+	[1, "APIKernel"],
+	[2, "Development"]
+]
+
+/*
 	[USER TEMP VARIABLES]
 */
 
