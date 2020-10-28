@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
     <link rel="stylesheet" href="assets/css/apikernel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
     <link rel="stylesheet" href="assets/css/libs/lib_misc_v1.css">
@@ -32,14 +31,19 @@
                     <li class="nav-item nav-animation"><a class="nav-link" href="#">API</a></li>
                     <li class="nav-item d-flex align-items-center nav-animation" style="padding: 8px 18px;">
                         <div class="nav-item dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(70,87,101);text-decoration:none;">DOCS</a>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="docs/portal/index.html" style="font-size: 13px;">DEVELOPER PORTAL</a><a class="dropdown-item" href="docs/tc/index.html" style="font-size: 13px;">TRINITYCORE</a><a class="dropdown-item" href="docs/wow/index.html"
-                                    style="font-size: 13px;">WORLD OF WARCRAFT</a></div>
+                            <div class="dropdown-menu" style="font-size: 11px;"><a class="dropdown-item" href="docs/portal/index.html">DEVELOPER PORTAL</a><a class="dropdown-item" href="docs/tc/index.html">TRINITYCORE</a><a class="dropdown-item" href="docs/wow/index.html">WORLD OF WARCRAFT</a></div>
                         </div>
                     </li>
                     <li class="nav-item nav-animation"><a class="nav-link" href="#">POLICIES</a></li>
                     <li class="nav-item nav-animation"><a class="nav-link" href="#">STATUS</a></li>
                     <li class="nav-item nav-animation"><a class="nav-link" href="#">CHANNELS</a></li>
-                </ul><a class="btn btn-light ml-auto action-button" role="button" href="login.html" style="background-color: #dc291e;color: rgba(255,255,255,0.85);">LOGIN</a></div>
+                </ul><a class="btn btn-light ml-auto action-button" role="button" id="nav-login" href="login.html" style="background-color: #dc291e;color: rgba(255,255,255,0.85);">LOGIN</a>
+                <div class="dropleft d-none ml-auto" id="nav-profile" style="font-size: 15px;"><a class="text-uppercase" data-toggle="dropdown" aria-expanded="false" href="#" style="font-size: 15px;color: rgb(51,51,51);font-family: Montserrat, sans-serif;"><i class="far fa-user-circle" style="margin-right: 10px;font-size: 20px;"></i>dummy_username</a>
+                    <div
+                        class="dropdown-menu text-uppercase" style="font-size: 11px;"><a class="dropdown-item" href="#">dashboard</a><a class="dropdown-item" href="#">apps</a><a class="dropdown-item" href="#">groups</a><a class="dropdown-item" href="#">messages</a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">logout</a></div>
+        </div>
+        </div>
         </div>
     </nav>
     <div class="d-flex justify-content-center align-items-center highlight-blue" style="background: url(assets/img/banner.jpg) center / cover no-repeat;min-height: 500px;overflow:hidden;">
