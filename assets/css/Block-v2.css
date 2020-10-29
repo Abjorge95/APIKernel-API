@@ -1,0 +1,13 @@
+.block-v2 {
+  color: #313437;
+  background-color: #eef4f7;
+  padding: 50px 0 55px;
+  overflow: hidden;
+}
+
+@media (max-width:767px) {
+  .block-v2 {
+    text-align: center;
+  }
+}
+

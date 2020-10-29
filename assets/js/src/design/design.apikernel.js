@@ -189,3 +189,37 @@ function scrollFunction() {
 function serverAliasRender(){
 	document.body.innerHTML = document.body.innerHTML.replace(/ServerAlias/g, sServerAlias);
 }
+
+/*
+	Show / Hide API key function
+*/
+
+function showHideAPIKey() {
+	var inputAPI = document.getElementById("api-key");
+	var buttonAPI = document.getElementById("api-button");
+	if (inputAPI.type === "password") {
+		inputAPI.type = "text";
+		buttonAPI.innerText = "Hide";
+	} else {
+		inputAPI.type = "password";
+		buttonAPI.innerText = "Show";
+	}
+}
+
+/*
+  Copy API key to clipboard
+*/
+
+function copyAPIKeyToClipBoard() {
+	showHideAPIKey();
+
+	var copyText = document.getElementById("api-key");
+  
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	document.execCommand("copy");
+
+	showHideAPIKey();
+
+	console.log("Copied API key " + copyText.value + " to clipboard.");
+}
