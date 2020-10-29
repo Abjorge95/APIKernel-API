@@ -211,9 +211,10 @@ function showHideAPIKey() {
 */
 
 function copyAPIKeyToClipBoard() {
-	showHideAPIKey();
-
 	var copyText = document.getElementById("api-key");
+	var copyButton = document.getElementById("api-copy");
+
+	showHideAPIKey();
   
 	copyText.select();
 	copyText.setSelectionRange(0, 99999);
@@ -222,4 +223,5 @@ function copyAPIKeyToClipBoard() {
 	showHideAPIKey();
 
 	console.log("Copied API key " + copyText.value + " to clipboard.");
+	copyButton.innerText = "Copied";
 }
