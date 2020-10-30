@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
     <link rel="stylesheet" href="assets/css/apikernel.css">
     <link rel="stylesheet" href="assets/css/Block-v2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
@@ -24,7 +25,7 @@
 </head>
 
 <body style="background: rgb(237,237,237);">
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="box-shadow: 0px 2px 17px 1px;font-family: Montserrat, sans-serif;font-size: 13px;">
+    <nav class="navbar navbar-light navbar-expand-lg navigation-clean-search" style="box-shadow: 0px 2px 17px 1px;font-family: Montserrat, sans-serif;font-size: 13px;">
         <div class="container-fluid"><i class="fab fa-dev" style="font-size: 30px;"></i><a class="navbar-brand" href="#" style="margin-left: 15px;">DEVELOPER</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
@@ -38,8 +39,8 @@
                     <li class="nav-item nav-animation"><a class="nav-link" href="#">POLICIES</a></li>
                     <li class="nav-item nav-animation"><a class="nav-link" href="#">STATUS</a></li>
                     <li class="nav-item nav-animation"><a class="nav-link" href="#">CHANNELS</a></li>
-                </ul><a class="btn btn-light d-none ml-auto action-button" role="button" id="nav-login" href="login.html" style="background-color: #dc291e;color: rgba(255,255,255,0.85);">LOGIN</a>
-                <div class="dropleft ml-auto" id="nav-profile" style="font-size: 15px;"><a class="text-uppercase" data-toggle="dropdown" aria-expanded="false" href="#" style="font-size: 15px;color: rgb(51,51,51);font-family: Montserrat, sans-serif;"><i class="far fa-user-circle" style="margin-right: 10px;font-size: 20px;"></i>Apixthie</a>
+                </ul><a class="btn btn-light ml-auto action-button" role="button" id="nav-login" href="login.html" style="background-color: #dc291e;color: rgba(255,255,255,0.85);">LOGIN</a>
+                <div class="dropdown d-none ml-auto" id="nav-profile" style="font-size: 15px;"><a class="text-uppercase" data-toggle="dropdown" aria-expanded="false" href="#" style="font-size: 15px;color: rgb(51,51,51);font-family: Montserrat, sans-serif;"><i class="far fa-user-circle" style="margin-right: 10px;font-size: 20px;"></i>Apixthie</a>
                     <div
                         class="dropdown-menu text-uppercase" style="font-size: 11px;"><a class="dropdown-item" href="#">dashboard</a><a class="dropdown-item" href="#">apps</a><a class="dropdown-item" href="#">groups</a><a class="dropdown-item" href="#">messages</a>
                         <div class="dropdown-divider"></div><a class="dropdown-item" href="#">logout</a></div>
@@ -47,16 +48,15 @@
         </div>
         </div>
     </nav>
-    <div class="d-flex justify-content-center align-items-center highlight-blue" style="background: url(&quot;assets/img/sylvanas.jpg&quot;) center / cover no-repeat;min-height: 350px;overflow: hidden;"></div>
+    <div class="d-flex justify-content-center align-items-center highlight-blue" style="background: url(&quot;assets/img/sylvanas.jpg&quot;) center / cover no-repeat;min-height: 400px;overflow: hidden;"></div>
     <div class="highlight-phone" style="background-color: rgb(255,255,255);">
-        <div class="row">
-            <div class="col-8 offset-2" style="background: #ffffff;">
+        <div class="row" style="margin: 0px;">
+            <div class="col-12" style="background: #ffffff;">
                 <nav class="navbar navbar-light navbar-expand-md">
-                    <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse text-uppercase d-xl-flex justify-content-xl-start"
-                            id="navcol-2" style="font-size: 13px;font-family: Montserrat, sans-serif;">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse text-uppercase d-inline justify-content-xl-start" id="navcol-2" style="font-size: 13px;font-family: Montserrat, sans-serif;">
                             <ul class="nav navbar-nav">
-                                <li class="nav-item"><a class="nav-link" href="#">Getting started</a></li>
+                                <li class="nav-item"><a class="nav-link" href="docs/portal/index.html">Getting started</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">application process</a></li>
                             </ul><button class="btn btn-primary text-uppercase ml-auto" type="button" style="background-color: #dc291e;border-style: none;color: rgba(230,230,230,0.85);font-weight: 400;font-size: 13px;font-family: Montserrat, sans-serif;padding-left: 20px;padding-right: 20px;">Register Product</button></div>
                     </div>
@@ -65,29 +65,29 @@
         </div>
     </div>
     <div class="highlight-phone" style="background: rgb(237,237,237);margin-top: 25px;font-family: Montserrat, sans-serif;">
-        <div class="row">
+        <div class="row" style="margin: 0px;">
             <div class="col-10 offset-1">
                 <div class="row" style="border-bottom: 1px solid rgb(208,208,208) ;">
-                    <div class="col-4 text-uppercase d-xl-flex justify-content-xl-start" style="font-size: 13px;"><strong>Documentation &amp; Policies</strong></div>
-                    <div class="col-8">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-uppercase d-xl-flex justify-content-xl-start" style="font-size: 13px;"><strong>Documentation &amp; Policies</strong></div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                         <p style="font-size: 13px;">We suggest reading through our documentation before working with our API. Every project owner is expected to adhere to the documentation and policies. Failure to adhere to the documentation or policies can lead to the revocation
                             of API access.</p>
                     </div>
                 </div>
                 <div class="row" style="margin-top: 25px;">
-                    <div class="col-4 text-uppercase d-xl-flex justify-content-xl-start" style="font-size: 13px;"><strong>Development API Key</strong></div>
-                    <div class="col-8">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-uppercase d-xl-flex justify-content-xl-start" style="font-size: 13px;"><strong>Development API Key</strong></div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                         <p style="font-size: 13px;margin-bottom: 0px;">This API key is to be used for development only. Please register any permanent products.</p><strong style="font-size: 13px;">Do NOT use this API key in a publicly available product!</strong>
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-6 col-sm-8 col-md-8 col-lg-8 col-xl-8">
                                 <form><input class="form-control" type="password" id="api-key" style="margin: 10px;height: 29px;font-size: 13px;" value="RGAPI-901a8e15-76be-42df-bceb-b6af31ec2d6e"></form>
                             </div>
-                            <div class="col-4"><button class="btn btn-primary btn-sm" id="api-button" type="button" style="margin: 10px;background: #dc291e;color: rgba(230,230,230,0.85);font-size: 13px;font-family: Montserrat, sans-serif;border-style: none;" onclick="showHideAPIKey()">Show</button>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center justify-content-md-start justify-content-lg-start justify-content-xl-start"><button class="btn btn-primary btn-sm" id="api-button" type="button" style="margin: 10px;background: #dc291e;color: rgba(230,230,230,0.85);font-size: 13px;font-family: Montserrat, sans-serif;border-style: none;" onclick="showHideAPIKey()">Show</button>
                                 <button
                                     class="btn btn-primary btn-sm" id="api-copy" type="button" style="background: rgb(51,51,51);font-size: 13px;font-family: Montserrat, sans-serif;border-style: none;" onclick="copyAPIKeyToClipBoard()">Copy</button>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" id="api-expired">
                             <div class="col">
                                 <p style="font-size: 11px;color: #dc291e;font-weight: 600;font-family: Montserrat, sans-serif;font-style: normal;margin-bottom: 0px;">Expired: 28-10-2020 @ 12:56am</p>
                                 <p style="font-size: 11px;">Your key has expired. You must generate your API key.</p>
@@ -96,9 +96,9 @@
                         <ul class="list-unstyled" style="font-size: 13px;margin-top: 16px;">
                             <li>20 requests every 1 seconds(s)</li>
                             <li>100 requests every 2 minutes(s)</li>
-                        </ul><button class="btn btn-primary btn-sm text-uppercase" type="button" style="margin: 10px;background: #dc291e;border-style: none;color: rgba(230,230,230,0.85);font-size: 13px;padding-left: 15px;padding-right: 15px;">Regenerateapi key</button>
+                        </ul><button class="btn btn-primary btn-sm text-uppercase" type="button" style="background: #dc291e;border-style: none;color: rgba(230,230,230,0.85);font-size: 13px;padding-left: 15px;padding-right: 15px;margin: 10px;">Regenerateapi key</button>
                         <button
-                            class="btn btn-primary btn-sm text-uppercase" type="button" style="margin: 10px;border-style: none;background: rgb(51,51,51);font-size: 13px;padding-left: 15px;padding-right: 15px;">View api keu usage</button>
+                            class="btn btn-primary btn-sm text-uppercase" type="button" style="border-style: none;background: rgb(51,51,51);font-size: 13px;padding-left: 15px;padding-right: 15px;margin: 10px;">View api keu usage</button>
                     </div>
                 </div>
             </div>
