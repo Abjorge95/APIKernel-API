@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="assets/css/Pricing-Tables.css">
 </head>
 
-<body style="background: rgb(237,237,237);">
+<body>
     <nav class="navbar navbar-light navbar-expand-lg navigation-clean-search" style="box-shadow: 0px 1px 10px 0px rgb(126,126,126);font-family: Montserrat, sans-serif;font-size: 13px;">
         <div class="container-fluid"><i class="fab fa-dev" style="font-size: 30px;"></i><a class="navbar-brand" href="index.html" style="margin-left: 15px;">DEVELOPER</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
@@ -59,61 +59,42 @@
         </div>
         </div>
     </nav>
-    <div class="d-flex justify-content-center align-items-center highlight-blue" style="background: url(&quot;assets/img/sylvanas.jpg&quot;) center / cover no-repeat;min-height: 400px;overflow: hidden;"></div>
-    <div class="highlight-phone" style="background-color: rgb(255,255,255);">
-        <div class="row" style="margin: 0px;">
-            <div class="col-12" style="background: #ffffff;">
-                <nav class="navbar navbar-light navbar-expand-md">
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse text-uppercase d-inline justify-content-xl-start" id="navcol-2" style="font-size: 13px;font-family: Montserrat, sans-serif;">
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item"><a class="nav-link" href="docs/portal/index.html#getting-started">Getting started</a></li>
-                                <li class="nav-item"><a class="nav-link" href="docs/portal/index.html#application-access">application process</a></li>
-                            </ul><button class="btn btn-primary text-uppercase ml-auto" type="button" style="background-color: #dc291e;border-style: none;color: rgba(230,230,230,0.85);font-weight: 400;font-size: 13px;font-family: Montserrat, sans-serif;padding-left: 20px;padding-right: 20px;">Register Product</button></div>
-                    </div>
-                </nav>
+    <!-- Start: Pricing Tables -->
+    <section class="pricing-table">
+        <div class="container">
+            <div class="center">
+                <h6 class="text-left" style="font-family: Montserrat, sans-serif;">API KEYS</h6>
+                <p class="lead text-justify" style="font-family: Montserrat, sans-serif;font-size: 14px;">Product API keys are not for testing purposes. <strong>You may submit an application in the planning stage of your product, but your application for a production key won't be approved until we have a complete idea of your product.</strong>&nbsp;Work
+                    in progress should be tested using your demo key</p>
             </div>
-        </div>
-    </div>
-    <div class="highlight-phone" style="background: rgb(237,237,237);margin-top: 25px;font-family: Montserrat, sans-serif;">
-        <div class="row" style="margin: 0px;">
-            <div class="col-10 offset-1">
-                <div class="row" style="border-bottom: 1px solid rgb(208,208,208) ;">
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-uppercase d-xl-flex justify-content-xl-start" style="font-size: 13px;"><strong>Documentation &amp; Policies</strong></div>
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                        <p style="font-size: 13px;">We suggest reading through our documentation before working with our API. Every project owner is expected to adhere to the documentation and policies. Failure to adhere to the documentation or policies can lead to the revocation
-                            of API access.</p>
+            <div class="pricing-area text-center">
+                <div class="row d-xl-flex justify-content-center">
+                    <div class="col-10 col-lg-4 col-xl-4 plan price green wow fadeInDown">
+                        <ul class="list-group">
+                            <li class="list-group-item heading" style="background: #bcbcbc;width: 100%;margin-left: 0px;">
+                                <h3 style="font-family: Montserrat, sans-serif;font-weight: 200;color: rgb(0,0,0);">Development API Key</h3><span class="price" style="font-family: Montserrat, sans-serif;font-weight: 100;font-size: 16px;color: rgb(0,0,0);">Non public projects</span></li>
+                            <li class="list-group-item"><span style="font-family: Montserrat, sans-serif;font-size: 14px;">28,000 requests per day</span></li>
+                            <li class="list-group-item"><span style="font-family: Montserrat, sans-serif;font-size: 14px;">Life cycle: 24 hours</span></li>
+                            <li class="list-group-item"><span style="font-family: Montserrat, sans-serif;font-size: 14px;">Rate limit increase: Not eligible</span></li>
+                            <li class="list-group-item plan-action"><a class="btn" href="#" style="font-family: Montserrat, sans-serif;background: #bcbcbc;color: rgb(0,0,0);">SUBMIT REQUEST</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="row" style="margin-top: 25px;">
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-uppercase d-xl-flex justify-content-xl-start" style="font-size: 13px;"><strong>Personal API Key</strong></div>
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                        <p style="font-size: 13px;margin-bottom: 0px;">This API key is to be used for development only. Please register any permanent products.</p><strong style="font-size: 13px;">Do NOT use this API key in a publicly available product!</strong>
-                        <div class="row">
-                            <div class="col-6 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-                                <form><input class="form-control" type="password" id="api-key" style="margin: 10px;height: 29px;font-size: 13px;" value="RGAPI-901a8e15-76be-42df-bceb-b6af31ec2d6e"></form>
-                            </div>
-                            <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center justify-content-md-start justify-content-lg-start justify-content-xl-start"><button class="btn btn-primary btn-sm" id="api-button" type="button" style="margin: 10px;background: #dc291e;color: rgba(230,230,230,0.85);font-size: 13px;font-family: Montserrat, sans-serif;border-style: none;" onclick="showHideAPIKey()">Show</button>
-                                <button
-                                    class="btn btn-primary btn-sm" id="api-copy" type="button" style="background: rgb(51,51,51);font-size: 13px;font-family: Montserrat, sans-serif;border-style: none;" onclick="copyAPIKeyToClipBoard()">Copy</button>
-                            </div>
-                        </div>
-                        <div class="row" id="api-expired">
-                            <div class="col">
-                                <p style="font-size: 11px;color: #dc291e;font-weight: 600;font-family: Montserrat, sans-serif;font-style: normal;margin-bottom: 0px;">Expired: 28-10-2020 @ 12:56am</p>
-                                <p style="font-size: 11px;">Your key has expired. You must renew your personal API key.</p>
-                            </div>
-                        </div><strong class="text-uppercase" style="font-size: 14px;">Rate Limits</strong>
-                        <ul class="list-unstyled" style="font-size: 13px;margin-top: 16px;">
-                            <li>500 requests per day</li>
-                        </ul><button class="btn btn-primary btn-sm text-uppercase" type="button" style="background: #dc291e;border-style: none;color: rgba(230,230,230,0.85);font-size: 13px;padding-left: 15px;padding-right: 15px;margin: 10px;">renew personal api key</button>
-                        <a
-                            class="btn btn-primary btn-sm text-uppercase" role="button" style="border-style: none;background: rgb(51,51,51);font-size: 13px;padding-left: 15px;padding-right: 15px;margin: 10px;" href="usage.html">View your api keY's usage</a>
+                    <div class="col-10 col-lg-4 col-xl-4 plan price red wow fadeInDown">
+                        <ul class="list-group">
+                            <li class="list-group-item heading" style="background: #333333;width: 100%;margin-left: 0px;">
+                                <h3 style="font-family: Montserrat, sans-serif;font-weight: 200;">Production API Key</h3><span class="price" style="font-family: Montserrat, sans-serif;font-weight: 100;font-size: 16px;">Public projects</span></li>
+                            <li class="list-group-item"><span style="font-family: Montserrat, sans-serif;font-size: 14px;">100,000 requests per day</span></li>
+                            <li class="list-group-item"><span style="font-family: Montserrat, sans-serif;font-size: 14px;">Life cycle: Unlimited</span></li>
+                            <li class="list-group-item"><span style="font-family: Montserrat, sans-serif;font-size: 14px;">Rate limit increase: Eligible</span></li>
+                            <li class="list-group-item"><span style="font-family: Montserrat, sans-serif;font-size: 14px;font-weight: 600;">Approval required</span></li>
+                            <li class="list-group-item plan-action"><a class="btn" href="#" style="font-family: Montserrat, sans-serif;background: #333333;">SUBMIT REQUEST</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- End: Pricing Tables -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>

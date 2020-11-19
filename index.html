@@ -5,15 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>APIKernel API</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Advanced-Pricing-Cards.css">
     <link rel="stylesheet" href="assets/css/apikernel.css">
     <link rel="stylesheet" href="assets/css/Block-v2.css">
+    <link rel="stylesheet" href="assets/css/Effective-Pricing-Cards.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
     <link rel="stylesheet" href="assets/css/libs/lib_misc_v1.css">
     <link rel="stylesheet" href="assets/css/libs/lib_toast_v1.css">
@@ -22,11 +26,19 @@
     <link rel="stylesheet" href="assets/css/misc/Highlight-Blue.css">
     <link rel="stylesheet" href="assets/css/misc/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/misc/Navigation-with-Search.css">
+    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/pricing-by-itvider.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Compare-Sticky-Head.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Grid.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Table-Style-01-1.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Table-Style-01.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Tables-1.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Tables.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg navigation-clean-search" style="box-shadow: 0px 2px 17px 1px;font-family: Montserrat, sans-serif;font-size: 13px;">
-        <div class="container-fluid"><i class="fab fa-dev" style="font-size: 30px;"></i><a class="navbar-brand" href="#" style="margin-left: 15px;">DEVELOPER</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-light navbar-expand-lg navigation-clean-search" style="box-shadow: 0px 1px 10px 0px rgb(126,126,126);font-family: Montserrat, sans-serif;font-size: 13px;">
+        <div class="container-fluid"><i class="fab fa-dev" style="font-size: 30px;"></i><a class="navbar-brand" href="index.html" style="margin-left: 15px;">DEVELOPER</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
@@ -62,65 +74,67 @@
         </div>
     </div>
     <div class="text-center" style="background-color: #E4E9ED;font-family: Montserrat, sans-serif;padding-bottom: 25px;margin-bottom: 55px;">
-        <div class="row" style="margin-right: 0px;margin-left: 0px;padding-top: 25px;">
-            <div class="col-8 offset-2">
-                <h4 style="font-weight: 400;color: #757575;">ABOUT APIKERNEL API</h4>
-            </div>
-        </div>
-        <div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 25px;">
-            <div class="col-10 offset-1">
-                <p class="text-center" style="font-size: 12px;margin-bottom: 0px;">With this site, we hope to provide the World of Warcraft developer community with access to game data in a secure and reliable way. We believe that is time to provide the World of Warcraft private community the tools to create amazing
-                    third-party tools for the server they play on. We want this API to meet the same high standards as our APIKernel products, so we'll be iterating and evolving as we hear your feedback and suggestions (so share 'em all).</p>
-            </div>
-        </div>
-        <div class="row justify-content-center" style="margin: 0px;">
-            <div class="col-10 col-sm-10 col-md-8 col-lg-3 col-xl-3" style="margin-top: 25px;">
-                <div class="d-flex justify-content-center align-items-center" style="width: 100%;min-height: 150px;background-color: #141414;border-radius: 3px;">
-                    <a class="d-flex justify-content-center align-items-center" href="docs/portal/index.html" style="width: calc(100% - 4px);height: 146px;border: 1px solid #94724d;color: rgba(255,255,255,0.8);text-decoration:none;" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div style="color: rgba(255, 255, 255, 0.8);width: calc(100% - 4px);">
-                                <div class="row">
-                                    <div class="col-10 offset-1">
-                                        <h6>GET STARTED</h6>
-                                        <p style="font-size: 12px;">Dive into the API with this short and sweet guide</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+        <div class="container-fluid">
+            <div class="row" style="margin-right: 0px;margin-left: 0px;padding-top: 25px;">
+                <div class="col-8 offset-2">
+                    <h4 style="font-weight: 400;color: #757575;font-family: Montserrat, sans-serif;">ABOUT APIKERNEL API</h4>
                 </div>
             </div>
-            <div class="col-10 col-sm-10 col-md-8 col-lg-3 col-xl-3" style="margin-top: 25px;">
-                <div class="d-flex justify-content-center align-items-center" style="width: 100%;min-height: 150px;background-color: #141414;border-radius: 3px;">
-                    <a class="d-flex justify-content-center align-items-center" href="#" style="width: calc(100% - 4px);height: 146px;border: 1px solid #94724d;color: rgba(255,255,255,0.8);text-decoration:none;" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div style="color: rgba(255, 255, 255, 0.8);width: calc(100% - 4px);">
-                                <div class="row">
-                                    <div class="col-10 offset-1">
-                                        <h6>FULL API REFERENCE</h6>
-                                        <p style="font-size: 12px;">Learn about each endpoint and the data returned</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+            <div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 25px;">
+                <div class="col-10 offset-1">
+                    <p class="text-center" style="font-size: 12px;margin-bottom: 0px;">With this site, we hope to provide the World of Warcraft developer community with access to game data in a secure and reliable way. We believe that is time to provide the World of Warcraft private community the tools to create amazing
+                        third-party tools for the server they play on. We want this API to meet the same high standards as our APIKernel products, so we'll be iterating and evolving as we hear your feedback and suggestions (so share 'em all).</p>
                 </div>
             </div>
-            <div class="col-10 col-sm-10 col-md-8 col-lg-3 col-xl-3" style="margin-top: 25px;">
-                <div class="d-flex justify-content-center align-items-center" style="width: 100%;min-height: 150px;background-color: #141414;border-radius: 3px;" onclick="window.location = &quot;https://github.com/Abjorge95/APIKernel-API/issues&quot;;">
-                    <a class="d-flex justify-content-center align-items-center" href="https://github.com/Abjorge95/APIKernel-API/issues" style="width: calc(100% - 4px);height: 146px;border: 1px solid #94724d;color: rgba(255,255,255,0.8);text-decoration:none;"
-                        target="_blank">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div style="color: rgba(255, 255, 255, 0.8);width: calc(100% - 4px);">
-                                <div class="row">
-                                    <div class="col-10 offset-1">
-                                        <h6>ISSUE TRACKER</h6>
-                                        <p style="font-size: 12px;">Report an issue or check the status of existing issues</p>
+            <div class="row justify-content-center" style="margin: 0px;">
+                <div class="col-10 col-sm-10 col-md-8 col-lg-3 col-xl-3" style="margin-top: 25px;">
+                    <div class="d-flex justify-content-center align-items-center" style="width: 100%;min-height: 150px;background-color: #141414;border-radius: 3px;">
+                        <a class="d-flex justify-content-center align-items-center" href="docs/portal/index.html" style="width: calc(100% - 4px);height: 146px;border: 1px solid #94724d;color: rgba(255,255,255,0.8);text-decoration:none;" target="_blank">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div style="color: rgba(255, 255, 255, 0.8);width: calc(100% - 4px);">
+                                    <div class="row">
+                                        <div class="col-10 offset-1">
+                                            <h6>GET STARTED</h6>
+                                            <p style="font-size: 12px;">Dive into the API with this short and sweet guide</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-10 col-md-8 col-lg-3 col-xl-3" style="margin-top: 25px;">
+                    <div class="d-flex justify-content-center align-items-center" style="width: 100%;min-height: 150px;background-color: #141414;border-radius: 3px;">
+                        <a class="d-flex justify-content-center align-items-center" href="#" style="width: calc(100% - 4px);height: 146px;border: 1px solid #94724d;color: rgba(255,255,255,0.8);text-decoration:none;" target="_blank">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div style="color: rgba(255, 255, 255, 0.8);width: calc(100% - 4px);">
+                                    <div class="row">
+                                        <div class="col-10 offset-1">
+                                            <h6>FULL API REFERENCE</h6>
+                                            <p style="font-size: 12px;">Learn about each endpoint and the data returned</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-10 col-md-8 col-lg-3 col-xl-3" style="margin-top: 25px;">
+                    <div class="d-flex justify-content-center align-items-center" style="width: 100%;min-height: 150px;background-color: #141414;border-radius: 3px;" onclick="window.location = &quot;https://github.com/Abjorge95/APIKernel-API/issues&quot;;">
+                        <a class="d-flex justify-content-center align-items-center" href="https://github.com/Abjorge95/APIKernel-API/issues" style="width: calc(100% - 4px);height: 146px;border: 1px solid #94724d;color: rgba(255,255,255,0.8);text-decoration:none;"
+                            target="_blank">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div style="color: rgba(255, 255, 255, 0.8);width: calc(100% - 4px);">
+                                    <div class="row">
+                                        <div class="col-10 offset-1">
+                                            <h6>ISSUE TRACKER</h6>
+                                            <p style="font-size: 12px;">Report an issue or check the status of existing issues</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,9 +152,11 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="assets/js/libs/lib_toast_v1.js"></script>
     <script src="assets/js/src/api/api.apikernel.js"></script>
     <script src="assets/js/src/config.js"></script>
+    <script src="assets/js/src/design/charts/design.js"></script>
     <script src="assets/js/src/design/design.apikernel.js"></script>
     <script src="assets/js/src/libs/lib.apikernel.js"></script>
     <script src="assets/js/src/variables.js"></script>

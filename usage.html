@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>APIKernel API</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Advanced-Pricing-Cards.css">
+    <link rel="stylesheet" href="assets/css/apikernel.css">
+    <link rel="stylesheet" href="assets/css/Block-v2.css">
+    <link rel="stylesheet" href="assets/css/Effective-Pricing-Cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="assets/css/libs/lib_misc_v1.css">
+    <link rel="stylesheet" href="assets/css/libs/lib_toast_v1.css">
+    <link rel="stylesheet" href="assets/css/misc/Block-v2-1.css">
+    <link rel="stylesheet" href="assets/css/misc/Block-v2.css">
+    <link rel="stylesheet" href="assets/css/misc/Highlight-Blue.css">
+    <link rel="stylesheet" href="assets/css/misc/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/misc/Navigation-with-Search.css">
+    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/pricing-by-itvider.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Compare-Sticky-Head.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Grid.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Table-Style-01-1.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Table-Style-01.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Tables-1.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Tables.css">
+</head>
+
+<body style="background: rgb(242,244,243);">
+    <nav class="navbar navbar-light navbar-expand-lg navigation-clean-search" style="box-shadow: 0px 1px 10px 0px rgb(126,126,126);font-family: Montserrat, sans-serif;font-size: 13px;">
+        <div class="container-fluid"><i class="fab fa-dev" style="font-size: 30px;"></i><a class="navbar-brand" href="index.html" style="margin-left: 15px;">DEVELOPER</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item nav-animation"><a class="nav-link" href="#">API</a></li>
+                    <li class="nav-item d-flex align-items-center nav-animation" style="padding: 8px 18px;">
+                        <div class="nav-item dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(70,87,101);text-decoration:none;">DOCS</a>
+                            <div class="dropdown-menu" style="font-size: 11px;"><a class="dropdown-item" href="docs/portal/index.html">DEVELOPER PORTAL</a><a class="dropdown-item" href="docs/tc/index.html">TRINITYCORE</a><a class="dropdown-item" href="docs/wow/index.html">WORLD OF WARCRAFT</a></div>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-animation"><a class="nav-link" href="#">POLICIES</a></li>
+                    <li class="nav-item nav-animation"><a class="nav-link" href="#">STATUS</a></li>
+                    <li class="nav-item nav-animation"><a class="nav-link" href="#">CHANNELS</a></li>
+                </ul><a class="btn btn-light ml-auto action-button" role="button" id="nav-login" href="login.html" style="background-color: #dc291e;color: rgba(255,255,255,0.85);">LOGIN</a>
+                <div class="dropdown d-none ml-auto" id="nav-profile" style="font-size: 15px;"><a class="text-uppercase" data-toggle="dropdown" aria-expanded="false" href="#" style="font-size: 15px;color: rgb(51,51,51);font-family: Montserrat, sans-serif;"><i class="far fa-user-circle" style="margin-right: 10px;font-size: 20px;"></i>Apixthie</a>
+                    <div
+                        class="dropdown-menu text-uppercase" style="font-size: 11px;"><a class="dropdown-item" href="#">dashboard</a><a class="dropdown-item" href="#">apps</a><a class="dropdown-item" href="#">groups</a><a class="dropdown-item" href="#">messages</a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">logout</a></div>
+        </div>
+        </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light navbar-expand" style="margin-top: 25px;margin-bottom: 25px;">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navcol-3">
+                    <ul class="nav navbar-nav d-xl-flex align-items-xl-center" style="border-bottom-style: none;">
+                        <li class="nav-item" style="background: #dc291e;border-radius: 3px;box-shadow: 0px 3px 20px rgba(108,110,112,0.23);padding: 5px;">
+                            <div class="nav-item dropright" style="margin: 0px;"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-family: Montserrat, sans-serif;font-size: 12px;color: rgb(255,255,255);padding: 5px;">Select your key</a>
+                                <div class="dropdown-menu"><a class="dropdown-item" href="#" style="font-family: Montserrat, sans-serif;font-size: 12px;"><strong>RGAPI-901a8e15-76be-42df-bceb-b6af31ec2d6e</strong></a></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item d-xl-flex align-items-xl-center" style="margin-right: 5px;margin-left: 5px;border-radius: 3px;background: rgba(193,193,193,0.56);box-shadow: 0px 2px 20px rgba(108,110,112,0.23);">
+                            <div class="nav-item dropleft" style="font-size: 20px;"><a class="active d-xl-flex align-items-xl-center" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(0,0,0);padding: 5px;"><span style="font-family: Montserrat, sans-serif;font-size: 12px;padding: 5px;">1</span><i class="la la-bell-o" style="color: rgb(70,87,101);padding-top: 5px;padding-bottom: 5px;"></i></a>
+                                <div
+                                    class="dropdown-menu" style="width: 300px;">
+                                    <h6 class="dropdown-header" style="font-family: Montserrat, sans-serif;font-size: 12px;font-weight: 400;">1 new notifications</h6>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#">
+                                        <div class="card notification-item" style="border-style: none;background: rgb(244,244,244);">
+                                            <div class="card-body float-left d-xl-flex align-items-xl-center">
+                                                <div class="float-left"><i class="la la-bug" style="color: rgb(139,142,149);font-size: 40px;"></i></div>
+                                                <div class="float-left" style="margin-left: 15px;max-width: 200px;">
+                                                    <h6 style="margin: 0px;font-weight: 200;font-size: 12px;"><strong>This is a test notification in order to preview how it will be presented to the user.</strong><br></h6><small style="color: rgb(181,181,181);">19 Nov 20 18:18pm</small></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="card notification-item" style="border-style: none;">
+                                            <div class="card-body float-left d-xl-flex align-items-xl-center">
+                                                <div class="float-left"><i class="la la-github" style="color: rgb(0,0,0);font-size: 40px;"></i></div>
+                                                <div class="float-left" style="margin-left: 15px;max-width: 200px;">
+                                                    <h6 style="margin: 0px;font-weight: 200;font-size: 12px;"><strong>New version 1.0.153 is available on Github now.</strong><br></h6><small style="color: rgb(181,181,181);">19 Nov 20 18:18pm</small></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="card notification-item" style="border-style: none;">
+                                            <div class="card-body float-left d-xl-flex align-items-xl-center">
+                                                <div class="float-left"><i class="la la-exclamation-circle" style="color: #e8ae42;font-size: 40px;"></i></div>
+                                                <div class="float-left" style="margin-left: 15px;max-width: 200px;">
+                                                    <h6 style="margin: 0px;font-weight: 200;font-size: 12px;"><strong>Your API Key has expired, please renew it or submit a new request.</strong><br></h6><small style="color: rgb(181,181,181);">19 Nov 20 18:18pm</small></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                            </div>
+                </div>
+                </li>
+                <li class="nav-item d-xl-flex align-items-xl-center" style="margin-left: 5px;margin-right: 5px;background: rgba(193,193,193,0.56);border-radius: 3px;box-shadow: 0px 2px rgba(108,110,112,0.23);">
+                    <div class="nav-item dropleft" style="font-size: 20px;"><a class="active" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(0,0,0);padding: 5px;"><i class="la la-cog" style="color: rgb(70,87,101);padding: 5px;"></i></a>
+                        <div class="dropdown-menu">
+                            <div class="form-check" style="padding: 4px 24px;"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="font-family: Montserrat, sans-serif;font-size: 12px;">Auto refresh</label></div><a class="dropdown-item"
+                                href="#" style="font-size: 12px;font-family: Montserrat, sans-serif;">Third Item</a></div>
+                    </div>
+                </li>
+                </ul>
+            </div>
+    </div>
+    </nav>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" style="margin-bottom: 25px;">
+            <div class="card" style="box-shadow: 0px 10px 20px #40404050;background: rgb(255,255,255);color: rgb(255,255,255);">
+                <div class="card-body">
+                    <h6 class="text-center card-title" style="font-family: Montserrat, sans-serif;color: rgb(159,169,180);font-weight: 400;">Total API Requests</h6>
+                    <p class="text-center card-text" style="font-family: Montserrat, sans-serif;font-size: 24px;color: rgb(159,169,180);">256</p><canvas id="total-api-chart" style="display: block; width: 228px; height: 100px;"></canvas></div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" style="margin-bottom: 25px;">
+            <div class="card" style="box-shadow: 0px 10px 20px #40404050;background: rgb(255,255,255);color: rgb(255,255,255);">
+                <div class="card-body">
+                    <h6 class="text-center card-title" style="font-family: Montserrat, sans-serif;color: rgb(159,169,180);font-weight: 400;">Auth API Requests</h6>
+                    <p class="text-center card-text" style="font-family: Montserrat, sans-serif;font-size: 24px;color: rgb(159,169,180);">206</p><canvas id="auth-api-chart" style="display: block; width: 228px; height: 100px;"></canvas></div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" style="margin-bottom: 25px;">
+            <div class="card" style="box-shadow: 0px 10px 20px #40404050;background: rgb(255,255,255);color: rgb(255,255,255);">
+                <div class="card-body">
+                    <h6 class="text-center card-title" style="font-family: Montserrat, sans-serif;color: rgb(159,169,180);font-weight: 400;">Characters API Requests</h6>
+                    <p class="text-center card-text" style="font-family: Montserrat, sans-serif;font-size: 24px;color: rgb(159,169,180);">30</p><canvas id="characters-api-chart" style="display: block; width: 228px; height: 100px;"></canvas></div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" style="margin-bottom: 25px;">
+            <div class="card" style="box-shadow: 0px 10px 20px #40404050;background: rgb(255,255,255);color: rgb(255,255,255);">
+                <div class="card-body">
+                    <h6 class="text-center card-title" style="font-family: Montserrat, sans-serif;color: rgb(159,169,180);font-weight: 400;">World API Requests</h6>
+                    <p class="text-center card-text" style="font-family: Montserrat, sans-serif;font-size: 24px;color: rgb(159,169,180);">20</p><canvas id="world-api-chart" style="display: block; width: 228px; height: 100px;"></canvas></div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: -25px;">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div class="row" style="margin-top: 25px;">
+                <div class="col-12" style="margin-top: 25px;">
+                    <div class="card" style="box-shadow: 0px 10px 20px #40404050;background: rgb(255,255,255);color: rgb(255,255,255);height: 100%;">
+                        <nav class="navbar navbar-light navbar-expand-md" style="border-style: solid;border-bottom-width: 1px;border-bottom-color: rgb(231,231,231);">
+                            <div class="container-fluid">
+                                <h6 class="text-left" style="font-family: Montserrat, sans-serif;color: rgb(159,169,180);margin-bottom: 0px;font-weight: 400;">Total requests past 24 hours</h6><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                                <div class="collapse navbar-collapse"
+                                    id="navcol-2">
+                                    <ul class="nav navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <div class="nav-item dropleft"><a class="active" data-toggle="dropdown" aria-expanded="false" href="#"><i class="la la-ellipsis-v" style="color: rgb(159,169,180);"></i></a>
+                                                <div class="dropdown-menu" style="font-family: Montserrat, sans-serif;"><a class="dropdown-item" href="#" style="font-family: Montserrat, sans-serif;font-size: 12px;">Total requests</a><a class="dropdown-item" href="#" style="font-family: Montserrat, sans-serif;font-size: 12px;">Auth requests</a>
+                                                    <a
+                                                        class="dropdown-item" href="#" style="font-family: Montserrat, sans-serif;font-size: 12px;">Characters requests</a><a class="dropdown-item" href="#" style="color: rgb(0,0,0);font-size: 12px;font-family: Montserrat, sans-serif;">World requests</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#" style="font-family: Montserrat, sans-serif;font-size: 12px;">Total requests results</a><a class="dropdown-item" href="#" style="font-family: Montserrat, sans-serif;font-size: 12px;">Auth requests results</a>
+                                                        <a
+                                                            class="dropdown-item" href="#" style="font-family: Montserrat, sans-serif;font-size: 12px;">Characters requests results</a><a class="dropdown-item" href="#" style="font-family: Montserrat, sans-serif;font-size: 12px;">World requests results</a>
+                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#" style="font-family: Montserrat, sans-serif;font-size: 12px;">2xx response codes</a><a class="dropdown-item" href="#" style="font-family: Montserrat, sans-serif;font-size: 12px;">4xx response codes</a>
+                                                            <a
+                                                                class="dropdown-item" href="#" style="font-family: Montserrat, sans-serif;font-size: 12px;">5xx response codes</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="card-body"><canvas id="reqByDay-api-chart" style="display: block; width: 228px; height: 100px;"></canvas></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div class="row" style="margin-top: 25px;">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6" style="margin-top: 25px;">
+                    <div class="card" style="box-shadow: 0px 10px 20px #40404050;background: rgb(255,255,255);color: rgb(255,255,255);height: 100%;">
+                        <div class="card-body">
+                            <h6 class="text-left card-title" style="font-family: Montserrat, sans-serif;color: rgb(159,169,180);font-weight: 400;font-size: 14px;">Total requests results<i class="la la-info-circle" data-toggle="tooltip" data-bs-tooltip="" data-placement="left" style="padding-left: 10px;" title="Percentage of response codes in the past 24 hours"></i></h6>
+                            <p style="color: #a0a0a0;font-family: Montserrat, sans-serif;font-size: 12px;margin-bottom: 0px;margin-top: 10px;">2xx Response Codes</p>
+                            <div class="progress" data-toggle="tooltip" data-bs-tooltip="" title="{value}" style="height: 8px;box-shadow: 0px 1px 5px rgba(92,92,92,0.52);">
+                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"><span class="sr-only">90%</span></div>
+                            </div>
+                            <p style="color: #a0a0a0;font-family: Montserrat, sans-serif;font-size: 12px;margin-bottom: 0px;margin-top: 10px;">4xx Error Codes</p>
+                            <div class="progress" data-toggle="tooltip" data-bs-tooltip="" title="{value}" style="height: 8px;box-shadow: 0px 1px 5px rgba(92,92,92,0.52);">
+                                <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100" style="width: 7%;"><span class="sr-only">7%</span></div>
+                            </div>
+                            <p style="color: #a0a0a0;font-family: Montserrat, sans-serif;font-size: 12px;margin-bottom: 0px;margin-top: 10px;">5xx Error Codes</p>
+                            <div class="progress" data-toggle="tooltip" data-bs-tooltip="" title="{value}" style="height: 8px;box-shadow: 0px 1px 5px rgba(92,92,92,0.52);">
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%;"><span class="sr-only">3%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6" style="margin-top: 25px;">
+                    <div class="card" style="box-shadow: 0px 10px 20px #40404050;background: rgb(255,255,255);color: rgb(255,255,255);height: 100%;">
+                        <div class="card-body">
+                            <h6 class="text-left card-title" style="font-family: Montserrat, sans-serif;color: rgb(159,169,180);font-weight: 400;font-size: 14px;">Auth requests results<i class="la la-info-circle" data-toggle="tooltip" data-bs-tooltip="" data-placement="left" style="padding-left: 10px;" title="Percentage of response codes in the past 24 hours"></i></h6>
+                            <p style="color: #a0a0a0;font-family: Montserrat, sans-serif;font-size: 12px;margin-bottom: 0px;margin-top: 10px;">2xx Response Codes</p>
+                            <div class="progress" data-toggle="tooltip" data-bs-tooltip="" title="{value}" style="height: 8px;box-shadow: 0px 1px 5px rgba(92,92,92,0.52);">
+                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"><span class="sr-only">90%</span></div>
+                            </div>
+                            <p style="color: #a0a0a0;font-family: Montserrat, sans-serif;font-size: 12px;margin-bottom: 0px;margin-top: 10px;">4xx Error Codes</p>
+                            <div class="progress" data-toggle="tooltip" data-bs-tooltip="" title="{value}" style="height: 8px;box-shadow: 0px 1px 5px rgba(92,92,92,0.52);">
+                                <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100" style="width: 7%;"><span class="sr-only">7%</span></div>
+                            </div>
+                            <p style="color: #a0a0a0;font-family: Montserrat, sans-serif;font-size: 12px;margin-bottom: 0px;margin-top: 10px;">5xx Error Codes</p>
+                            <div class="progress" data-toggle="tooltip" data-bs-tooltip="" title="{value}" style="height: 8px;box-shadow: 0px 1px 5px rgba(92,92,92,0.52);">
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%;"><span class="sr-only">3%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6" style="margin-top: 25px;">
+                    <div class="card" style="box-shadow: 0px 10px 20px #40404050;background: rgb(255,255,255);color: rgb(255,255,255);height: 100%;">
+                        <div class="card-body">
+                            <h6 class="text-left card-title" style="font-family: Montserrat, sans-serif;color: rgb(159,169,180);font-weight: 400;font-size: 14px;">Characters requests results<i class="la la-info-circle" data-toggle="tooltip" data-bs-tooltip="" data-placement="left" style="padding-left: 10px;" title="Percentage of response codes in the past 24 hours"></i></h6>
+                            <p style="color: #a0a0a0;font-family: Montserrat, sans-serif;font-size: 12px;margin-bottom: 0px;margin-top: 10px;">2xx Response Codes</p>
+                            <div class="progress" data-toggle="tooltip" data-bs-tooltip="" title="{value}" style="height: 8px;box-shadow: 0px 1px 5px rgba(92,92,92,0.52);">
+                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%;"><span class="sr-only">99%</span></div>
+                            </div>
+                            <p style="color: #a0a0a0;font-family: Montserrat, sans-serif;font-size: 12px;margin-bottom: 0px;margin-top: 10px;">4xx Error Codes</p>
+                            <div class="progress" data-toggle="tooltip" data-bs-tooltip="" title="{value}" style="height: 8px;box-shadow: 0px 1px 5px rgba(92,92,92,0.52);">
+                                <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="sr-only">0%</span></div>
+                            </div>
+                            <p style="color: #a0a0a0;font-family: Montserrat, sans-serif;font-size: 12px;margin-bottom: 0px;margin-top: 10px;">5xx Error Codes</p>
+                            <div class="progress" data-toggle="tooltip" data-bs-tooltip="" title="{value}" style="height: 8px;box-shadow: 0px 1px 5px rgba(92,92,92,0.52);">
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%;"><span class="sr-only">1%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6" style="margin-top: 25px;">
+                    <div class="card" style="box-shadow: 0px 10px 20px #40404050;background: rgb(255,255,255);color: rgb(255,255,255);height: 100%;">
+                        <div class="card-body">
+                            <h6 class="text-left card-title" style="font-family: Montserrat, sans-serif;color: rgb(159,169,180);font-weight: 400;font-size: 14px;">World requests results<i class="la la-info-circle" data-toggle="tooltip" data-bs-tooltip="" data-placement="left" style="padding-left: 10px;" title="Percentage of response codes in the past 24 hours"></i></h6>
+                            <p style="color: #a0a0a0;font-family: Montserrat, sans-serif;font-size: 12px;margin-bottom: 0px;margin-top: 10px;">2xx Response Codes</p>
+                            <div class="progress" data-toggle="tooltip" data-bs-tooltip="" title="{value}" style="height: 8px;box-shadow: 0px 1px 5px rgba(92,92,92,0.52);">
+                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" style="width: 97%;"><span class="sr-only">97%</span></div>
+                            </div>
+                            <p style="color: #a0a0a0;font-family: Montserrat, sans-serif;font-size: 12px;margin-bottom: 0px;margin-top: 10px;">4xx Error Codes</p>
+                            <div class="progress" data-toggle="tooltip" data-bs-tooltip="" title="{value}" style="height: 8px;box-shadow: 0px 1px 5px rgba(92,92,92,0.52);">
+                                <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%;"><span class="sr-only">1%</span></div>
+                            </div>
+                            <p style="color: #a0a0a0;font-family: Montserrat, sans-serif;font-size: 12px;margin-bottom: 0px;margin-top: 10px;">5xx Error Codes</p>
+                            <div class="progress" data-toggle="tooltip" data-bs-tooltip="" title="{value}" style="height: 8px;box-shadow: 0px 1px 5px rgba(92,92,92,0.52);">
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 2%;"><span class="sr-only">2%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="assets/js/libs/lib_toast_v1.js"></script>
+    <script src="assets/js/src/api/api.apikernel.js"></script>
+    <script src="assets/js/src/config.js"></script>
+    <script src="assets/js/src/design/charts/design.js"></script>
+    <script src="assets/js/src/design/design.apikernel.js"></script>
+    <script src="assets/js/src/libs/lib.apikernel.js"></script>
+    <script src="assets/js/src/variables.js"></script>
+</body>
+
+</html>
